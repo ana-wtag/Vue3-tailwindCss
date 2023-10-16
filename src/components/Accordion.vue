@@ -54,12 +54,17 @@ function activate(item) {
           class="transition duration-300 ease-in-out"
         />
       </div>
-      <div
-        class="text-black py-2.5 px-6 max-h-52 overflow-auto transform duration-300 ease-in-out"
-        v-if="item.isOpen"
-      >
-        {{ item.content }}
-      </div>
+      <transition name="expand">
+        <div class="text-black py-2.5 px-6" v-show="item.isOpen">
+          {{ item.content }}
+        </div>
+      </transition>
     </li>
   </ul>
 </template>
+
+<style>
+.ease-custom {
+  transition-timing-function: cubic-bezier(0.61, -0.53, 0.43, 1.43);
+}
+</style>
