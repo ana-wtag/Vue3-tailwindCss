@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+  .container {
+    @apply px-4;
+  }
   .btn {
     @apply focus:ring-offset-2 focus:ring-2 rounded-full ring-1 p-2 px-4 py-1 mt-3 text-sm font-semibold hover:text-white hover:ring-0 dark:focus:border-transparent dark:focus:ring-offset-gray-800;
     @apply p-2;
