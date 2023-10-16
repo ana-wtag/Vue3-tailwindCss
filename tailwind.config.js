@@ -13,9 +13,6 @@ export default {
         secondary: '#DDE2FF',
         background: '#F8F9FF',
         grey: '#BBBDD0'
-      },
-      maxWidth: {
-        '1/2': '50%'
       }
     }
   },

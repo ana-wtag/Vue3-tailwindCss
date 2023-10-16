@@ -8,6 +8,14 @@
     @apply p-2;
   }
 
+  .btn-primary {
+    @apply bg-primary rounded-md px-4 py-0.5 text-white font-medium text-base;
+  }
+
+  .link {
+    @apply block px-4 py-2 text-sm;
+  }
+
   .btn-cyan {
     @apply focus:ring-cyan-600 ring-cyan-400  text-cyan-700 hover:bg-cyan-600;
   }
